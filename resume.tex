@@ -1,109 +1,110 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
-%
-% This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
+\documentclass[11pt a4paper]{article}
+\usepackage[top=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\parindent=0pt
+\usepackage{fontspec}
+\setsansfont{Arial}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{0452 549 590}
+\fancyfoot[C]{57 Greenacre St Pinjarra WA 6208} % 页码
+\fancyfoot[R]{s90512g@gmail.com}
 
-
-%-------------------------------------------------------------------------------
-% CONFIGURATIONS
-%-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
-
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-% \definecolor{sectiondivider}{HTML}{5D5D5D}
-
-% Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
-
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
-
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Hank}{Zheng}
-%\position{Software Engineer}
-\address{57 Greenacre St ,Pinjarra WA}
-
-\mobile{0452549590}
-\email{s90512g@gmail.com}
-%\dateofbirth{January 1st, 1970}
-%\homepage{www.posquit0.com}
-%\github{s90512g}
-%\linkedin{conghanzheng}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \kaggle{kaggle-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
-
-%\quote{``Be the change that you want to see in the world."}
-
-
-%-------------------------------------------------------------------------------
 \begin{document}
+\begin{Huge}
+\textbf{Hank Zheng}\\
+\end{Huge}
 
-% Print the header with above personal information
-% Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+%------Summary------%
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Hank Zheng~~~·~~~Resume}
-  {\thepage}
+\begin{LARGE}
+\textbf{Summary
+\hrulefill
+}
+\end{LARGE}
 
+Working in WA since September 2022:  Upon my arrival from Taiwan,\,I have been focused on seeking an employment sponsor to support my Regional WA Visa requirements to obtain my PR. My intention is to continue working in Australia permanently.\\
 
-%-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/experience.tex}
-%\input{resume/honors.tex}
-%\input{resume/presentation.tex}
-%\input{resume/writing.tex}
-%\input{resume/committees.tex}
-\input{resume/education.tex}
-%\input{resume/extracurricular.tex}
+%------Work Experience------%
+\begin{LARGE}
 
 
-%-------------------------------------------------------------------------------
+\textbf{Work Experience
+\hrulefill
+}
+\end{LARGE}
+
+\textbf{Quality Produce International} - Nov. 2022-Feb. 2023 Canning Vale, WA 
+
+Order Fulfilment\\
+
+\textbf{E Ink Holding Inc.} - Oct. 2020 - Jul. 2022 Hsinchu, Taiwan
+
+Automation Engineer
+\begin{itemize}
+        \item {Design an Inkjet Printer at the micron level with Mechanical Engineer to make the product.}
+        \item {Design Systems architecture of Inkjet Printer(Industry)}
+        \item {Use C\# with WPF to finish Inkjet Printer's function(Motion, Image Process).}
+\end{itemize}
+%---------------------------------------------------------
+
+\textbf{Micro-Star International Co., Ltd.} - Oct. 2019 - Oct. 2020 New Taipei, Taiwan 
+
+Software Engineer
+\begin{itemize}
+\item {Use C\# with WPF UI to Development Program And with C++ library to Communicate with Monitor to setting property.}
+\end{itemize} 
+%---------------------------------------------------------
+\textbf{National Taichung University of Science and Technology} - Sept. 2015 - Jul. 2019 Taichung, Taiwan
+
+Information Technology Support Role
+
+\begin{itemize}
+        \item {Install and configure the system for classroom.}
+        \item {Computer hardware repair .}
+        \item {Management VMware server.}
+        \item {Install and configure Linux server.}
+\end{itemize} 
+
+
+%------Education------%
+\begin{LARGE}
+\textbf{Education
+\hrulefill
+}
+\end{LARGE}
+
+\textbf{National Taichung University of Science and Technology} - Taichung, Taiwan\\
+Master of Computer Science and Engineering\\
+Sep. 2017-Jul. 2019\\
+
+\textbf{National Taichung University of Science and Technology} - Taichung, Taiwan\\
+Bachelor of Computer Science and Engineering\\
+Sep. 2013-Jul. 2017\\
+
+%------SKILL------%
+\begin{LARGE}
+\textbf{Skills
+\hrulefill\\
+}
+\end{LARGE}
+\large{
+\textbf{Computer Repair\\
+Information Technology\\
+Linux\\
+Forklift Operation\\
+}}
+
+%------Licences and certifications------%
+\begin{LARGE}
+
+\textbf{Licences and certifications
+\hrulefill\\
+}
+\end{LARGE}
+\textbf{Forklift Licence\\
+WA Drivers Licence C Class\\
+White card
+}
+
 \end{document}
